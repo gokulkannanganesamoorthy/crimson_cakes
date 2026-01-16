@@ -43,7 +43,7 @@ export const ScrollToTopButton = () => {
           exit={{ opacity: 0, scale: 0.5, y: 20 }}
           transition={{ duration: 0.3 }}
           onClick={scrollToTop}
-          className="fixed bottom-24 md:bottom-8 right-8 z-[100] p-4 bg-crimson-600/90 hover:bg-crimson-500 text-white rounded-full shadow-lg shadow-crimson-900/20 backdrop-blur-sm border border-white/10 group overflow-hidden"
+          className="fixed bottom-32 md:bottom-8 right-8 z-[100] p-4 bg-crimson-600/90 hover:bg-crimson-500 text-white rounded-full shadow-lg shadow-crimson-900/20 backdrop-blur-sm border border-white/10 group overflow-hidden"
           aria-label="Scroll to top"
         >
           <div className="relative z-10">

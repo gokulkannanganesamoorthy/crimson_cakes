@@ -24,92 +24,51 @@ const Home = () => {
   return (
     <div ref={containerRef} className="bg-stone-50 min-h-screen">
       {/* CINEMATIC HERO SECTION */}
-      <motion.section
-        style={{ y: heroY }}
-        className="h-screen relative overflow-hidden flex items-center sticky top-0 z-0"
-      >
-        {/* Background Gradient */}
-        <div className="absolute inset-0 bg-gradient-to-br from-stone-50 via-amber-50/30 to-stone-100" />
-
-        {/* Decorative Elements */}
-        <div className="absolute top-20 right-20 w-96 h-96 bg-crimson-500/5 rounded-full blur-3xl" />
-        <div className="absolute bottom-20 left-20 w-96 h-96 bg-amber-500/5 rounded-full blur-3xl" />
-
+      <section className="min-h-screen relative flex items-center pt-24 bg-stone-50">
         <div className="container mx-auto px-6 h-full flex items-center">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 w-full items-center">
             {/* LEFT: Product Showcase */}
-            <motion.div
-              initial={{ opacity: 0, x: -50 }}
-              animate={{ opacity: 1, x: 0 }}
-              transition={{ duration: 1, ease: [0.16, 1, 0.3, 1] }}
-              className="relative h-[600px] hidden lg:block"
-            >
+            <div className="relative h-[600px] hidden lg:block">
               {/* Main Featured Image */}
-              <motion.div
-                className="absolute top-0 left-0 w-[400px] h-[500px] rounded-2xl overflow-hidden shadow-2xl"
-                whileHover={{ scale: 1.02, rotate: -1 }}
-                transition={{ duration: 0.4 }}
-              >
+              <div className="absolute top-0 left-0 w-[400px] h-[500px] rounded-2xl overflow-hidden shadow-xl">
                 <img
                   src={showcaseImages[0]}
                   alt="Featured Cake"
                   className="w-full h-full object-cover"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent" />
-              </motion.div>
+              </div>
 
               {/* Floating Secondary Images */}
-              <motion.div
-                className="absolute top-32 right-0 w-[280px] h-[320px] rounded-2xl overflow-hidden shadow-xl"
-                initial={{ opacity: 0, scale: 0.8 }}
-                animate={{ opacity: 1, scale: 1 }}
-                transition={{ delay: 0.3, duration: 0.8 }}
-                whileHover={{ scale: 1.05, rotate: 2, zIndex: 10 }}
-              >
+              <div className="absolute top-32 right-0 w-[280px] h-[320px] rounded-2xl overflow-hidden shadow-lg">
                 <img
                   src={showcaseImages[1]}
                   alt="Signature Cake"
                   className="w-full h-full object-cover"
                 />
-              </motion.div>
+              </div>
 
-              <motion.div
-                className="absolute bottom-0 right-32 w-[240px] h-[280px] rounded-2xl overflow-hidden shadow-xl"
-                initial={{ opacity: 0, scale: 0.8 }}
-                animate={{ opacity: 1, scale: 1 }}
-                transition={{ delay: 0.5, duration: 0.8 }}
-                whileHover={{ scale: 1.05, rotate: -2, zIndex: 10 }}
-              >
+              <div className="absolute bottom-0 right-32 w-[240px] h-[280px] rounded-2xl overflow-hidden shadow-lg">
                 <img
                   src={showcaseImages[2]}
                   alt="Artisan Cake"
                   className="w-full h-full object-cover"
                 />
-              </motion.div>
+              </div>
 
-              {/* Floating Badge */}
-              <motion.div
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ delay: 0.8, duration: 0.6 }}
-                className="absolute top-12 right-12 bg-white/90 backdrop-blur-sm px-6 py-3 rounded-full shadow-lg border border-amber-200/50"
-              >
+              {/* Static Badge */}
+              <div className="absolute top-12 right-12 bg-white px-6 py-3 rounded-full shadow-md border border-stone-200">
                 <div className="flex items-center gap-2">
                   <Sparkles className="w-4 h-4 text-amber-600" />
                   <span className="text-sm font-medium text-stone-900">
                     Handcrafted Daily
                   </span>
                 </div>
-              </motion.div>
-            </motion.div>
+              </div>
+            </div>
 
             {/* RIGHT: Typography & CTA */}
             <div className="space-y-8 lg:pl-12">
-              <motion.div
-                initial={{ opacity: 0, y: 30 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, delay: 0.2 }}
-              >
+              <div>
                 <span className="inline-block text-crimson-600 text-sm font-medium tracking-[0.2em] uppercase mb-4">
                   Artisan Bakery
                 </span>
@@ -119,24 +78,14 @@ const Home = () => {
                     FORBIDDEN
                   </span>
                 </h1>
-              </motion.div>
+              </div>
 
-              <motion.p
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                transition={{ duration: 0.8, delay: 0.4 }}
-                className="text-xl text-stone-600 leading-relaxed max-w-lg font-light"
-              >
+              <p className="text-xl text-stone-600 leading-relaxed max-w-lg font-light">
                 Where culinary artistry meets forbidden indulgence. Each
                 creation is a masterpiece designed to captivate your senses.
-              </motion.p>
+              </p>
 
-              <motion.div
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, delay: 0.6 }}
-                className="flex flex-col sm:flex-row gap-4 pt-4"
-              >
+              <div className="flex flex-col sm:flex-row gap-4 pt-4">
                 <Link
                   to="/gallery"
                   className="group relative px-8 py-4 bg-crimson-600 text-white rounded-full font-medium overflow-hidden transition-all hover:shadow-xl hover:shadow-crimson-600/30"
@@ -154,7 +103,7 @@ const Home = () => {
                 >
                   Order Bespoke
                 </Link>
-              </motion.div>
+              </div>
 
               {/* Stats */}
               <motion.div
@@ -183,7 +132,7 @@ const Home = () => {
             </div>
           </div>
         </div>
-      </motion.section>
+      </section>
 
       {/* INTRO SECTION - Slides over Hero */}
 
