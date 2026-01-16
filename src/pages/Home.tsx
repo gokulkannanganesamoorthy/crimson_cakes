@@ -17,7 +17,6 @@ const Home = () => {
     offset: ['start start', 'end end'],
   });
 
-  const heroOpacity = useTransform(scrollYProgress, [0, 0.3], [1, 0]);
   const heroY = useTransform(scrollYProgress, [0, 0.3], [0, -100]);
 
   const showcaseImages = [cake3, cake4, cake5];
