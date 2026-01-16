@@ -26,7 +26,7 @@ const Home = () => {
     <div ref={containerRef} className="bg-stone-50 min-h-screen">
       {/* CINEMATIC HERO SECTION */}
       <motion.section
-        style={{ opacity: heroOpacity, y: heroY }}
+        style={{ y: heroY }}
         className="h-screen relative overflow-hidden flex items-center sticky top-0 z-0"
       >
         {/* Background Gradient */}
