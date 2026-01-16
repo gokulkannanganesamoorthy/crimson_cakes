@@ -188,7 +188,7 @@ const Home = () => {
 
       {/* INTRO SECTION - Slides over Hero */}
 
-      <section className="relative z-10 bg-stone-50 sticky top-0 rounded-t-[3rem] border-t border-white/20 shadow-[0_-50px_100px_rgba(255,255,255,0.8)]">
+      <section className="relative z-10 bg-stone-50 sticky top-0 rounded-t-[3rem] border-t border-white/20">
         <div className="py-32 px-6 container mx-auto text-center min-h-screen flex flex-col justify-center">
           <p className="text-2xl md:text-4xl font-light text-stone-600 max-w-4xl mx-auto leading-relaxed">
             "We don't create food. We create{' '}
