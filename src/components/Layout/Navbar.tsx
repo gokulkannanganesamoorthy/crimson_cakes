@@ -63,7 +63,7 @@ const MagneticLink = ({
 
 export const Navbar = () => {
   return (
-    <div className="fixed bottom-8 left-0 right-0 z-50 flex justify-center pointer-events-none">
+    <div className="fixed bottom-8 left-0 right-0 z-[100] flex justify-center pointer-events-none">
       <motion.nav
         initial={{ y: 100, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}

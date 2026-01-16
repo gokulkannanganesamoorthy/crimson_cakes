@@ -5,7 +5,7 @@ export const Footer = () => {
   return (
     <footer
       id="contact"
-      className="bg-neutral-950 border-t border-white/10 pt-20 pb-10"
+      className="bg-neutral-950 border-t border-white/10 pt-20 pb-32"
     >
       <div className="container mx-auto px-6">
         <div className="flex flex-col items-center text-center">
