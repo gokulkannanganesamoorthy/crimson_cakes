@@ -16,7 +16,7 @@ const Home = () => {
   return (
     <div ref={containerRef} className="bg-stone-50 min-h-screen">
       {/* CINEMATIC HERO SECTION */}
-      <section className="min-h-screen relative flex items-center pt-24 bg-stone-50">
+      <section className="min-h-screen relative flex items-center pt-24 pb-32 bg-stone-50">
         <div className="container mx-auto px-6 h-full flex items-center">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 w-full items-center">
             {/* LEFT: Product Showcase */}
