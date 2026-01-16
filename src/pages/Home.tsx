@@ -8,12 +8,6 @@ import { Footer } from '../components/Layout/Footer';
 import cake3 from '../assets/gallery/cake3.jpg';
 import cake4 from '../assets/gallery/cake4.jpg';
 import cake5 from '../assets/gallery/cake5.jpg';
-import cake7 from '../assets/gallery/cake7.jpg';
-import cake8 from '../assets/gallery/cake8.jpg';
-import cake9 from '../assets/gallery/cake9.jpg';
-import cake10 from '../assets/gallery/cake10.jpg';
-import cake11 from '../assets/gallery/cake11.jpg';
-import cake12 from '../assets/gallery/cake12.jpg';
 
 const Home = () => {
   const containerRef = useRef(null);
