@@ -1,4 +1,4 @@
-import { motion, useScroll, useTransform } from 'framer-motion';
+import { motion } from 'framer-motion';
 import { useRef } from 'react';
 import { ArrowRight, Sparkles } from 'lucide-react';
 import { Link } from 'react-router-dom';
@@ -11,12 +11,6 @@ import cake5 from '../assets/gallery/cake5.jpg';
 
 const Home = () => {
   const containerRef = useRef(null);
-
-  const { scrollYProgress } = useScroll({
-    target: containerRef,
-    offset: ['start start', 'end end'],
-  });
-
   const showcaseImages = [cake3, cake4, cake5];
 
   return (
