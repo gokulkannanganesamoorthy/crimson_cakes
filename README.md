@@ -47,12 +47,12 @@ A premium, high-performance portfolio website for Crimson Cakes, an artisan bake
     npm run build
     ```
 
-## 👨‍💻 Developer
+## 💻 Dev
 
 **Gokul Kannan Ganesamoorthy**
 
-- Portfolio: [gokulkannan.vercel.app](https://gokulkannan.vercel.app)
-- GitHub: [iamgokulkannan](https://github.com/iamgokulkannan)
+- Portfolio: [gokulkannanganesamoorthy.vercel.app](https://gokulkannanganesamoorthy.vercel.app)
+- GitHub: [gokulkannanganesamoorthy](https://github.com/gokulkannanganesamoorthy)
 
 ---
 
